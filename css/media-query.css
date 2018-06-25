@@ -16,22 +16,23 @@ figure{
 
 /* 모바일 디바이스- 1px 부터 480px 까지 */
 @media screen and (min-width:1px) and (max-width:599px) {
-body{
-  background-color: pink;
-}
-.img-wrap{
-  margin: 1em;
-    }
+  body{
+   background-color: pink;
   }
-  /* 태블릿 디바이스- 600 부터 1024까지 */
+  .img-wrap{
+   margin: 1em;
+  }
+}
+
+/*태블릿 디바이스- 600 부터 1024까지 */
 @media screen and (min-width: 600px) and (max-width:1024px){
-body{
-  background-color: lime;
-}
-.wrap-contianer{
-  display: flex;
-  flex-wrap: wrap;
-}
+  body{
+   background-color: orange;
+  }
+  .wrap-container{
+   display: flex;
+   flex-wrap: wrap;
+  }
  .img-wrap{
    width: 50%; 
    padding: 1em;
@@ -39,23 +40,32 @@ body{
  }
 }
 /* 태블릿 디바이스 - 769px 부터 1024px 까지 */
-@media  screen and(min-width: 769px) and (max-width: 1024px){
+/*@media  screen and (min-width: 769px) and (max-width: 1024px){
   body{
     background-color: orange;
-}
-}
+  }
+  .wrap-contianer{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .img-wrap{
+    width: 50%;
+    padding: 1em;
+    box-sizing: border-box;
+  }
+}*/
 /* 데스크탑 디바이스- 1025px 이상 */
-@media screen and(min-width: 1025px){
+@media screen and (min-width: 1025px){
   body{
     background-color: aqua;
-}
-.wrap-contianer{
-  display: flex;
-  flex-wrap: wrap;
-}
-.img-wrap{
-  width: 25%;
-  padding: 1em;
-  box-sizing: border-box;
-}
+  }
+  .wrap-container{
+   display: flex;
+   flex-wrap: wrap;
+  }
+  .img-wrap{
+    width: 25%;
+    padding: 1em;
+    box-sizing: border-box;
+  }
 }
