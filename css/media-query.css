@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+/* 모든 디바이스 */
+body{
+  background-color: yellow;
+  margin: 0;
+}
+figure{
+  margin: 0;
+  padding: 0;
+}
+.img-wrap img{
+  width: 100%;
+  height: auto;
+}
+
+/* 모바일 디바이스- 1px 부터 480px 까지 */
+@media screen and (min-width:1px) and (max-width:599px) {
+body{
+  background-color: pink;
+}
+.img-wrap{
+  margin: 1em;
+    }
+  }
+  /* 태블릿 디바이스- 600 부터 1024까지 */
+@media screen and (min-width: 600px) and (max-width:1024px){
+body{
+  background-color: lime;
+}
+.wrap-contianer{
+  display: flex;
+  flex-wrap: wrap;
+}
+ .img-wrap{
+   width: 50%; 
+   padding: 1em;
+   box-sizing: border-box;
+ }
+}
+/* 태블릿 디바이스 - 769px 부터 1024px 까지 */
+@media  screen and(min-width: 769px) and (max-width: 1024px){
+  body{
+    background-color: orange;
+}
+}
+/* 데스크탑 디바이스- 1025px 이상 */
+@media screen and(min-width: 1025px){
+  body{
+    background-color: aqua;
+}
+.wrap-contianer{
+  display: flex;
+  flex-wrap: wrap;
+}
+.img-wrap{
+  width: 25%;
+  padding: 1em;
+  box-sizing: border-box;
+}
+}
